@@ -1,0 +1,61 @@
+h2 {
+    text-align: center;
+}
+.text {
+    margin: auto;
+  display: block;
+  max-width: 600px;
+}
+.contact-form {
+    max-width: 700px;
+  padding: 1em;
+  display: block;
+  margin: 30px auto;
+  background-color: #c4eef2;
+  box-shadow: 3px 8px 15px #d8d8d8;
+}
+.text-box {
+  width: 100%;
+  margin-top: 2px;
+  padding: 10px;
+  font-size: 16px;
+}
+.send-button {
+  background-color: #c2aec3;
+  color: black;
+  border: 3px solid black;
+  width: 150px;
+  padding: 5px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: omnes-arabic, sans-serif;
+  font-weight: 500;
+}
+.send-button:hover {
+  background-color: transparent;
+}
+form div label {
+  display: block;
+  margin-top: 1rem;
+}
+#message-container {
+  height: 200px;
+  width: 100%;
+  margin-top: 2px;
+  padding: 10px;
+  font-size: 16px;
+}
+.message {
+  background: green;
+  padding: 1rem;
+  color: white;
+  margin-bottom: 1rem;
+  width: 90%;
+}
+.form-error {
+  display: none;
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 2px;
+}
