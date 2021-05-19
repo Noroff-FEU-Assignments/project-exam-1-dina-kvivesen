@@ -18,27 +18,33 @@ getPosts();
 
 function createHTML(posts){
 
-    /* for (let i = 0; i < posts.length; i++) {
+    for (let i = 0; i < posts.length; i++) {
         if(i ==+ 4) {
             break;
         }
-       
+       var post = posts[i];
         console.log(posts[i]);
-         
-    } */
-
-    posts.forEach(function(post){
-        productContainer.innerHTML += `<a href="blogspecific.html?id=${post.id}" class="container">
+        productContainer.innerHTML += `<section><a href="blogspecific.html?id=${post.id}" class="container">
                                         <div>
                                         <img src="${post.featured_media_src_url}">
                                         <h2>${post.title.rendered}</h2>
                                         <p>${post.excerpt.rendered}<p>
-                                        </div>`;
+                                        </div></section>`;
+         
+    } 
+
+    /* posts.forEach(function(post){
+        productContainer.innerHTML += `<section><a href="blogspecific.html?id=${post.id}" class="container">
+                                        <div>
+                                        <img src="${post.featured_media_src_url}">
+                                        <h2>${post.title.rendered}</h2>
+                                        <p>${post.excerpt.rendered}<p>
+                                        </div></section>`;
                     
                                         
-    })
+    }) */
     
-}
+} 
 
 const slider = document.querySelector(".slider");
 

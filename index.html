@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sugar & Spice | food blog</title>
+    <link rel="stylesheet" href="https://use.typekit.net/vja4enc.css">
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
@@ -41,13 +42,21 @@
         </div>
       </header>
 <main>
+  <section class="background">
+  <h1>Latest posts</h1>
+
   <div class="carousel-container">
     <div class="carousel">
 <div class="slider">
 </div>
 <div class="controls">
-  <span class="arrow left"><i class="fas fa-chevron-left"></i></span>
-  <span class="arrow right"><i class="fas fa-chevron-right"></i></span>
+  <span class="arrow left">
+    <i class="fas fa-chevron-left"></i>
+  </span>
+  <span class="arrow right">
+    <i class="fas fa-chevron-right"></i>
+  </span>
+
   <ul>
     <li class="selected"></li>
     <li></li>
@@ -55,6 +64,7 @@
     <li></li>
   </ul>
 </div>
+</section>
     </div>
   </div>
 </main>
@@ -64,9 +74,10 @@
                 <div class="newsletter-container">
                     <i class="far fa-envelope"></i>
                     <h4>join the sugar & spice club</h4>
-                    <p>Get new recipes and inspo straight to your inbox</p>
+                    <p>Get new recipes and inspo delivered straight to your inbox</p>
       
                     <input
+                    class="news-text"
                     type="text"
                     placeholder="first name..."
                     name="name"
@@ -74,13 +85,14 @@
                   />
 
                   <input
+                  class="news-text"
                     type="text"
                     placeholder="email address..."
                     name="mail"
                     required
                   />
       
-                  <input type="submit" value="sign me up" /> <i class="fas fa-arrow-right"></i>
+                  <input class="submit-button" type="submit" value="sign me up" /> <i class="fas fa-arrow-right"></i>
                 </div>
               </form>
 
