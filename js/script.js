@@ -1,4 +1,4 @@
-const url = "http://dinakvivesen.com/sugarandspice/wp-json/wp/v2/posts/";
+const url = "https://dinakvivesen.com/sugarandspice/wp-json/wp/v2/posts/";
 const corsFix = "https://noroffcors.herokuapp.com/" + url;
 
 const productContainer = document.querySelector(".slider");

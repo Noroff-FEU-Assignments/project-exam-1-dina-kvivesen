@@ -6,7 +6,7 @@ const params = new URLSearchParams(queryString);
 
 const id = params.get("id");
 
-const api_url = "http://dinakvivesen.com/sugarandspice/wp-json/wp/v2/posts/";
+const api_url = "https://dinakvivesen.com/sugarandspice/wp-json/wp/v2/posts/";
 const corsFix = "https://noroffcors.herokuapp.com/" + api_url;
 const url = corsFix + id;
 
