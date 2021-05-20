@@ -23,7 +23,7 @@ function createHTML(posts){
             break;
         }
        var post = posts[i];
-        console.log(posts[i]);
+        
         productContainer.innerHTML += `<section><a href="blogspecific.html?id=${post.id}" class="container">
                                         <div>
                                         <img src="${post.featured_media_src_url}">

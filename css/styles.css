@@ -2,6 +2,12 @@ body {
   font-family: century gothic pro;
   color: black;
 }
+header {
+  margin-top: 50px;
+}
+main {
+  padding-top: 10px;
+}
 .background {
   background: linear-gradient(180deg, #c4eef2 50%, #fff 50%);
   height: fit-content;
@@ -10,6 +16,7 @@ h1 {
   font-family: museo slab;
   font-weight: 500;
   text-align: center;
+  margin-top: 0;
 }
 h2 {
   font-family: jumble;
@@ -23,10 +30,6 @@ h2 {
   margin: 0%;
   padding: 0%;
 }
-nav {
-  display: flex;
-  justify-content: space-between;
-}
 nav li {
   display: none;
 }
@@ -34,15 +37,25 @@ nav li {
   display: none;
 }
 nav #hamburger-menu:checked ~ ul li {
+  padding-top: 0px;
+  text-align: center;
   display: flex;
+  justify-content: center;
+  height: 70px;
+  text-align: center;
 }
-nav ul {
-  margin: 0px;
-  padding: 0px;
+nav {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
 }
 nav a {
-  padding: 5px;
-  font-size: 1rem;
+  font-size: 15px;
+}
+nav #hamburger-menu:checked ~ ul {
+  margin: 0;
+  padding: 30px 0;
 }
 nav a:hover {
   text-decoration: underline;
@@ -55,6 +68,7 @@ i.fas.fa-bars {
   position: absolute;
   font-size: larger;
 }
+
 label {
   margin-right: 15px;
 }
@@ -96,10 +110,12 @@ a {
   color: black;
 }
 #logo {
+  position: absolute;
   width: 250px;
   display: block;
-  margin: auto;
-  margin-bottom: -20px;
+ left: 50%;
+ transform: translateX(-50%);
+  margin-top: -17px;
 }
 .postdetails {
   max-width: fit-content;
@@ -114,7 +130,6 @@ a {
   overflow: hidden;
 }
 .slider {
-  height: 100%;
   display: flex;
   width: 400%;
   transition: all 0.3s;
@@ -160,6 +175,37 @@ a {
 .controls ul li.selected {
   background: transparent;
 }
+.load-all-btn {
+  background-color: #c2aec3;
+  border: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  color: black;
+  width: 150px;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: omnes-arabic, sans-serif;
+  font-weight: 500;
+}
+.load-all-btn:disabled {
+  display: none;
+}
+.load-more-container {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 0;
+}
+.post-container {
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+}
+.post-container figure {
+  margin: 0;
+}
+.post-container ul, ol {
+text-align: left;
+}
 /* newsletter styles */
 .submit-button {
   background-color: #c2aec3;
@@ -203,9 +249,44 @@ footer {
     margin-bottom: -30px;
   }
   nav .some-icons {
-    display: flex;
+    display: none;
   }
   .posts {
     justify-content: space-evenly;
   }
+}
+
+/*desktop styles*/
+@media only screen and (min-width: 1100px) {
+  #hamburger-menu {
+    display: none;
+  }
+  label[for="hamburger-menu"] {
+    display: none !important;
+  }
+  nav .some-icons {
+display: inline-flex;
+justify-content: flex-end;
+margin-bottom: 0;
+  }
+  nav .some-icons a {
+    padding-left: 20px;
+      }
+  nav {
+    display: inline-flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    padding-bottom: 0;
+    height: 20px;
+  }
+  nav ul {
+    display: inline-flex;
+    justify-content: space-evenly;
+    padding: 0;
+  }
+  nav ul li {
+    padding-right: 20px;
+    display: flex;
+  }
+  
 }
