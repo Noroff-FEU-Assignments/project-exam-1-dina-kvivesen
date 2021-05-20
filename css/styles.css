@@ -196,7 +196,7 @@ a {
   margin: 10px 0;
 }
 .post-container {
-  width: fit-content;
+  max-width: 600px;
   margin: auto;
   text-align: center;
 }
@@ -205,6 +205,19 @@ a {
 }
 .post-container ul, ol {
 text-align: left;
+display: inline-block;
+}
+.about-img {
+  width: 368px;
+}
+.blue-box {
+  background-color: #C4EEF2;
+}
+.blue-box a, .post-container a {
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: bold;
+
 }
 /* newsletter styles */
 .submit-button {
@@ -244,9 +257,10 @@ footer {
     margin-left: 5%;
     margin-right: 5%;
   }
+
   #logo {
     width: 400px;
-    margin-bottom: -30px;
+    margin-bottom: -40px;
   }
   nav .some-icons {
     display: none;
