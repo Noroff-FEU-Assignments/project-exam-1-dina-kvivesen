@@ -15,7 +15,6 @@ async function getPost() {
     try {
     const response = await fetch(url);
     const details = await response.json();
-    console.log(details),
 
 document.title = details.title.rendered;
 

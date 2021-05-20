@@ -34,7 +34,7 @@ function createHTML(posts){
  
 
 
- const urlPagetwo = "http://dinakvivesen.com/sugarandspice/wp-json/wp/v2/posts?page=2";
+ const urlPagetwo = "https://dinakvivesen.com/sugarandspice/wp-json/wp/v2/posts?page=2";
 const corsFixpagetwo = "https://noroffcors.herokuapp.com/" + urlPagetwo;
 
 const loadAllButton = document.querySelector(".load-all-btn");
