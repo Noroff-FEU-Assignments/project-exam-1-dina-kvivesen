@@ -113,8 +113,8 @@ a {
   position: absolute;
   width: 250px;
   display: block;
- left: 50%;
- transform: translateX(-50%);
+  left: 50%;
+  transform: translateX(-50%);
   margin-top: -17px;
 }
 .postdetails {
@@ -212,18 +212,20 @@ a {
   opacity: 80%;
   cursor: pointer;
 }
-.post-container ul, ol {
-text-align: left;
-display: inline-block;
+.post-container ul,
+ol {
+  text-align: left;
+  display: inline-block;
 }
 .about-img {
   max-width: 80%;
   height: auto;
 }
 .blue-box {
-  background-color: #C4EEF2;
+  background-color: #c4eef2;
 }
-.blue-box a, .post-container a {
+.blue-box a,
+.post-container a {
   text-decoration: underline;
   font-style: italic;
   font-weight: bold;
@@ -243,7 +245,6 @@ display: inline-block;
 .modal.open {
   opacity: 1;
   pointer-events: all;
- 
 }
 .modal.open img {
   position: absolute;
@@ -253,9 +254,8 @@ display: inline-block;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
 }
-
 
 /* newsletter styles */
 .submit-button {
@@ -317,13 +317,13 @@ footer {
     display: none !important;
   }
   nav .some-icons {
-display: inline-flex;
-justify-content: flex-end;
-margin-bottom: 0;
+    display: inline-flex;
+    justify-content: flex-end;
+    margin-bottom: 0;
   }
   nav .some-icons a {
     padding-left: 20px;
-      }
+  }
   nav {
     display: inline-flex;
     justify-content: space-between;
@@ -340,5 +340,4 @@ margin-bottom: 0;
     padding-right: 20px;
     display: flex;
   }
-  
 }
