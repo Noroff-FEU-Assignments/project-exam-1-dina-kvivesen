@@ -248,6 +248,8 @@ display: inline-block;
 .modal.open img {
   position: absolute;
   height: auto;
+  height: 80%;
+  width: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
