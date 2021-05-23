@@ -20,19 +20,15 @@ var breadcrumb = document.querySelector("#blogpost");
 breadcrumb.innerHTML = document.title;
 
 const modal = document.querySelector(".modal");
-var images = document.querySelectorAll("figure img");
+const images = document.querySelectorAll(".wp-block-image size-large is-resized");
 
-
-console.log(images);
 
 document.addEventListener("click", function(event) {
     if (!event.target.matches("figure img")) return;
 
     let imageClone = event.target.cloneNode(true);
-    
    
     modal.classList.add("open");
-    
 
     imageClone.classList.add("open");
     modal.appendChild(imageClone);

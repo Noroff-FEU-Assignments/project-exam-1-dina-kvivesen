@@ -239,8 +239,6 @@ ol {
   height: 100%;
   pointer-events: none;
   opacity: 0;
-  transition: 0.25s ease-out;
-  z-index: 1;
 }
 .modal.open {
   opacity: 1;
